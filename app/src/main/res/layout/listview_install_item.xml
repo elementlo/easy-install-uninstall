@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_item"
+                android:background="@drawable/main_listview_item_selector"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+	<ImageView
+		android:id="@+id/iv_appico"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="16dp"
+		android:background="@mipmap/ic_launcher"/>
+
+	<TextView
+		android:id="@+id/tv_appname"
+		android:layout_width="180dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="18.5dp"
+		android:layout_toRightOf="@+id/iv_appico"
+		android:text="Appname"
+		/>
+
+	<TextView
+		android:id="@+id/tv_appversion"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/tv_appname"
+		android:layout_marginTop="5.5dp"
+		android:layout_toRightOf="@+id/iv_appico"
+		android:text="v 1.0"/>
+
+	<TextView
+		android:id="@+id/tv_installed"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="4dp"
+		android:layout_marginTop="18.5dp"
+		android:layout_toLeftOf="@+id/cb_mainlist"
+		android:text="installed"
+		android:textColor="@color/colorMainBlue"
+		android:visibility="invisible"
+		/>
+
+	<TextView
+		android:id="@+id/tv_dateadsize"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/tv_installed"
+		android:layout_below="@+id/tv_installed"
+		android:layout_marginTop="5.5dp"
+		android:text="2017-1-1-2mb"/>
+
+	<CheckBox
+		android:id="@+id/cb_mainlist"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="24dp"/>
+
+</RelativeLayout>

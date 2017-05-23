@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/toolbar_sort"
+		android:icon="@mipmap/ic_sort"
+		android:orderInCategory="0"
+		android:title="排序"
+		app:showAsAction="always"></item>
+	<item
+		android:id="@+id/toolbar_search"
+		android:icon="@mipmap/ic_search_white"
+		android:orderInCategory="0"
+		android:title="搜索"
+		app:actionViewClass="android.support.v7.widget.SearchView"
+		app:showAsAction="always"></item>
+	<item
+		android:id="@+id/toolbar_selectall"
+		android:orderInCategory="0"
+		android:title="全选"
+		android:icon="@drawable/ic_select_all"
+		app:actionLayout="@layout/custom_checkbox"
+		app:showAsAction="always"></item>
+
+</menu>

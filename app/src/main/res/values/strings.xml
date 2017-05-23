@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">manager</string>
+	<string name="accessibility_service_description">autoinstall</string>
+
+	//toggledrawer
+	<string name="toggledrawer_open">toggledraweropen</string>
+	<string name="toggledrawer_close">toggledrawerclose</string>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:paddingBottom="25dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="25dp"
+	>
+
+	<TextView
+		android:id="@+id/tv_priority"
+		android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:gravity="center"
+		android:text="Priority"
+		android:textStyle="bold"/>
+
+	<CheckBox
+		android:id="@+id/btn_select_installed"
+		android:layout_width="53dp"
+		android:layout_height="wrap_content"
+		android:layout_alignBottom="@+id/tv_priority"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="18dp"
+		android:button="@null"
+		android:checked="false"
+		android:gravity="center"
+		android:padding="5dp"
+		android:text="Installed"
+		android:textSize="14sp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_sortname"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/tv_priority"
+		android:layout_marginTop="30dp"
+		android:orientation="vertical"
+		>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="34dp"
+			android:gravity="center"
+			android:text="Sort Name"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="34dp"
+			android:gravity="center"
+			android:text="Sort Date"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="34dp"
+			android:gravity="center"
+			android:text="Sort Size"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			/>
+	</LinearLayout>
+
+	<mobi.trustlab.manager.customviews.NestedRadiogroup
+		android:id="@+id/rg_sort_option"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/btn_select_installed"
+		android:layout_marginTop="30dp"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/btn_sortby_az"
+				android:layout_width="45dp"
+				android:layout_height="34dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginStart="10dp"
+				android:layout_weight="1"
+				android:button="@null"
+				android:gravity="center"
+				android:text="A-z"
+				android:textSize="14sp"/>
+
+			<RadioButton
+				android:id="@+id/btn_sortby_za"
+				android:layout_width="53dp"
+				android:layout_height="34dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginStart="10dp"
+				android:layout_weight="1"
+				android:button="@null"
+				android:gravity="center"
+				android:text="Z-a"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RadioButton
+				android:id="@+id/btn_sortby_asc"
+				android:layout_width="45dp"
+				android:layout_height="34dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginStart="10dp"
+				android:layout_weight="1"
+				android:button="@null"
+				android:gravity="center"
+				android:text="Asc"
+				android:textSize="14sp"/>
+
+			<RadioButton
+				android:id="@+id/btn_sortby_desc"
+				android:layout_width="53dp"
+				android:layout_height="34dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginStart="10dp"
+				android:layout_weight="1"
+				android:button="@null"
+				android:gravity="center"
+				android:text="Desc"
+				android:textSize="14sp"/>
+		</LinearLayout>
+
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RadioButton
+		android:id="@+id/btn_sortby_small"
+		android:layout_width="45dp"
+		android:layout_height="34dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginStart="10dp"
+		android:layout_weight="1"
+		android:button="@null"
+		android:gravity="center"
+		android:text="Small"
+		android:textSize="14sp"/>
+
+	<RadioButton
+		android:id="@+id/btn_sortby_large"
+		android:layout_width="53dp"
+		android:layout_height="34dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginStart="10dp"
+		android:layout_weight="1"
+		android:button="@null"
+		android:gravity="center"
+		android:text="Large"
+		android:textSize="14sp"/>
+</LinearLayout>
+
+
+
+	</mobi.trustlab.manager.customviews.NestedRadiogroup>
+
+</RelativeLayout>
